@@ -22,13 +22,13 @@ Features **add, delete, and mark tasks as completed**, with **Local Storage pers
 ## 🗂️ Folder Structure
 
 
-project-root/
-│
-├── assets/ # Images used in the app
-│ └── empty-todo.png
-├── index.html # Main HTML file
-├── style.css # CSS styling
-└── script.js # JavaScript functionality
+todo-list-app/
+├── assets/
+│   └── empty-todo.png
+├── index.html
+├── style.css
+└── script.js
+
 
 
 ---
@@ -66,7 +66,7 @@ open index.html
 
 You can see the live demo of this app hosted on GitHub Pages:
 
-Live Demo [Link](https://saikat-codes.github.io/js-todo-list/)
+Live Demo [[https://saikat-codes.github.io/js-todo-list/](https://saikat-codes.github.io/js-todo-list/)
 
 
 # 🎨 Technologies Used
