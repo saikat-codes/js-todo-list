@@ -33,15 +33,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     max-width: 30vw;
     min-width: 400px;
+    height: 500px;
+    overflow-y: auto;
 }
 
 .empty-img{
     width: 250px;
     margin-top: 60px;
     margin-bottom: 20px;
+    margin-left: 2.7em;
 }
 .empty {
     display: none;
@@ -49,8 +52,8 @@ body {
 
 .completed {
   text-decoration-line: line-through;
-  text-decoration-thickness: 2px;
-  text-decoration-color: #888;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ffffff9d;
 }
 
 .title{
@@ -78,7 +81,6 @@ body {
 .todo-box {
     width: 100%;
 }
-
 li {
     width: 100%;
     display: flex;
@@ -273,4 +275,24 @@ footer span p a:hover {
         gap: 7px;
     }
     
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
 }
