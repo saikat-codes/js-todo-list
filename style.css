@@ -19,15 +19,14 @@ body {
     width: fit-content;
     position: relative;
     left: 5px;
-    font-family: 'Inter','Courier New', Courier, monospace;
+    font-family: 'Poppins','Courier New', Courier, monospace;
     font-size: 18px;
     padding: 20px;
     background-color: rgba(29, 28, 28, 0.077);
-    backdrop-filter: blur(20px); 
+    backdrop-filter: blur(25px); 
     outline: none;
     border: 2.5px solid rgba(255, 255, 255, 0.079);
     border-radius: 7px;
-    text-transform: uppercase;
     font-weight: 600;
     box-shadow: 7px 10px 20px rgba(9, 9, 9, 0.647);
     z-index: 100;  
@@ -35,6 +34,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 30vw;
+    min-width: 400px;
 }
 
 .empty-img{
@@ -44,6 +45,12 @@ body {
 }
 .empty {
     display: none;
+}
+
+.completed {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #888;
 }
 
 .title{
@@ -57,6 +64,7 @@ body {
     font-family:'Space Grotesk','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     color:rgba(217, 221, 221, 0.842);
+    
 }
 
 .add-text-box {
@@ -67,18 +75,107 @@ body {
     gap: 10px;
 }
 
+.todo-box {
+    width: 100%;
+}
+
+li {
+    width: 100%;
+    display: flex;
+    padding-right: 0.5em;
+    justify-content: space-between;
+    margin-bottom: .7em;
+}
+
+.text {
+    width: 80%;
+}
+.task-actions {
+  display: flex;
+}
+
+.task-list {
+    margin-top: 3em;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+    text-align: left;
+    font-weight: 400;
+}
+
+.dltBtn {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 7px 6px;
+  height: 2.45em;
+  width: 2.35em;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.dltBtn:hover {
+  background-color: #9b1c1c;
+}
+
+.dltBtn:active {
+  transform: scale(0.96);
+}
+
+.todo-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #457b9d;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  margin-right: 0.8em;
+}
+
+.todo-checkbox:checked {
+  background-color: #457b9d;
+  border-color: #457b9d;
+}
+
+.todo-checkbox:checked::after {
+  content: "✔";
+  position: absolute;
+  left: 2px;
+  top: -3.5px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.todo-checkbox:hover {
+  border-color: #1d3557;
+}
+
+
 #input-box {
+    width: 100%;               
+    max-width: 100%;             
+    min-width: 0;                
+    height: 2.2em;
+    font-size: 20px;
+    font-family: 'Jetbrains mono','Franklin Gothic Medium',
+    'Arial Narrow', Arial, sans-serif;
+    padding: 0 15px;
     border-radius: 2em;
     outline: none;
     border: 2px solid rgba(255, 255, 255, 0.079);
-    height: 42px;
-    font-size: 20px;
-    font-family: 'Jetbrains mono','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    backdrop-filter: blur(25px); 
+    backdrop-filter: blur(25px);
     background-color: rgba(198, 197, 197, 0.077);
-    padding-left: 15px;
-    padding-right: 15px;
-
+    box-sizing: border-box;
+    margin-left: .5em;
 }
 
 #input-box:focus {
@@ -97,6 +194,8 @@ body {
     background-color: rgba(198, 197, 197, 0.077);
     font-size: 18px;
     cursor: pointer;
+    flex-shrink: 0;
+    margin-right: .5em;
 }
 
 #todo-btn:hover {
@@ -149,6 +248,7 @@ footer span p a:hover {
         font-size: 14px;
         padding: 15px;
         box-shadow: 4px 6px 12px rgba(9, 9, 9, 0.5);
+        min-width: 80vw;
     }
 
     body {

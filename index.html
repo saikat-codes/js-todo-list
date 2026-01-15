@@ -6,9 +6,9 @@
     <title>To-Do App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="body">
@@ -18,10 +18,29 @@
         <div class="container">
             <div class="add-text-box">
                 <input type="text" name="To-Do" placeholder="Add a new task..." id="input-box">
-                <button type="button" id="todo-btn"><i class="fa-solid fa-plus"></i></button>
+                <button type="submit" id="todo-btn"><i class="fa-solid fa-plus"></i></button>
             </div>
             <div class="todo-box">
-                <ul class="task-list"></ul>
+                <ul class="task-list">
+                    <li>
+                        <input type="checkbox" name="todo-checkbox" value="todo-checkbox" class="todo-checkbox">
+                            <span class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellendus nisi rerum! Vitae, impedit unde? Inventore totam, recusandae voluptatum repudiandae qui possimus. Enim!
+                            </span>
+                        <div class="task-actions">
+                            <button class="dltBtn"><i class="fa-regular fa-trash-can"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="todo-checkbox" value="todo-checkbox" class="todo-checkbox">
+                            <span class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellendus nisi rerum! Vitae, impedit unde? Inventore totam, recusandae voluptatum repudiandae qui possimus. Enim!
+                            </span>
+                        <div class="task-actions">
+                            <button class="dltBtn"><i class="fa-regular fa-trash-can"></i></button>
+                        </div>
+                    </li>
+                </ul>
                 <img src="assets/empty-todo.png" alt="empty-img" class="empty-img empty">
             </div>
         </div>
@@ -30,5 +49,6 @@
         <span><p class="foot">made with❤️by <a href="https://www.linkedin.com/in/saikat-das-698a5b2a2/" target="_blank">@saikat</a></p></span>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
