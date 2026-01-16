@@ -38,7 +38,7 @@ todo-list-app/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/todo-list-app.git
+git clone https://github.com/saikat-codes/todo-list-app.git
 
 ``` 
 
@@ -66,7 +66,7 @@ open index.html
 
 You can see the live demo of this app hosted on GitHub Pages:
 
-Live Demo [https://saikat-codes.github.io/js-todo-list/](https://saikat-codes.github.io/js-todo-list/)
+Live Demo => [https://saikat-codes.github.io/js-todo-list/](https://saikat-codes.github.io/js-todo-list/)
 
 
 # 🎨 Technologies Used
