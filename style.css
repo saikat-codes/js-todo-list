@@ -54,6 +54,8 @@ body {
   text-decoration-line: line-through;
   text-decoration-thickness: 3px;
   text-decoration-color: #ffffff9d;
+  color: #9E9E9E;
+  font-style: italic;
 }
 
 .title{
