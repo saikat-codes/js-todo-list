@@ -1,7 +1,7 @@
 # To-Do List App 📝
 
 A simple **To-Do List web application** built with HTML, CSS, and JavaScript.  
-Features **add, delete, and mark tasks as completed**, with **Local Storage persistence** and **confetti animation** when tasks are completed.  
+Features **add, delete, and mark tasks as completed** and **confetti animation** when tasks are completed.  
 
 ![To-Do App Screenshot](assets/screenshot.png)
 
