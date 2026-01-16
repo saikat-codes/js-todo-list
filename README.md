@@ -21,14 +21,14 @@ Features **add, delete, and mark tasks as completed** and **confetti animation**
 
 ## 🗂️ Folder Structure
 
-
+```
 todo-list-app/
 ├── assets/
 │   └── empty-todo.png
 ├── index.html
 ├── style.css
 └── script.js
-
+```
 
 
 ---
